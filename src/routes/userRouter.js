@@ -3,9 +3,10 @@ import userController from '../controllers/UserController';
 import loginRequired from '../middlewares/LoginRequired';
 
 const router = new Router();
+// router.get('/', userController.index);
+// router.get('/:id', userController.show);
+
 router.post('/', userController.store);
-router.get('/', loginRequired, userController.index);
-router.get('/:id', userController.show);
-router.put('/:id', userController.update);
-router.delete('/:id', userController.delete);
+router.put('/', loginRequired, userController.update);
+router.delete('/', loginRequired, userController.delete);
 export default router;
