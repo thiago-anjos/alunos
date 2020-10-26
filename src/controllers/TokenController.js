@@ -22,7 +22,7 @@ class TokenController {
     }
     const { id } = user;
     const token = JWT.sign({ id, email }, process.env.TOKEN_SECRET, {
-      expiresIn: parseInt(process.env.JWT_EXPIRE),
+      expiresIn: process.env.JWT_EXPIRE,
     });
     return res.send({ token });
   }
