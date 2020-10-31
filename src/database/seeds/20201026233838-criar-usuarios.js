@@ -5,28 +5,28 @@ module.exports = {
     await queryInterface.bulkInsert('users', [
       {
         nome: 'John Doe',
-        email: 'john@gmail.com',
+        email: '78@gmail.com',
         password_hash: await bcryptjs.hash('123456', 8),
         created_at: new Date(),
         updated_at: new Date(),
       },
       {
         nome: 'John Doe 1',
-        email: 'john1@gmail.com',
+        email: '7878@gmail.com',
         password_hash: await bcryptjs.hash('123456', 8),
         created_at: new Date(),
         updated_at: new Date(),
       },
       {
         nome: 'John Doe 2',
-        email: 'john2@gmail.com',
+        email: '45444464@gmail.com',
         password_hash: await bcryptjs.hash('123456', 8),
         created_at: new Date(),
         updated_at: new Date(),
       },
       {
         nome: 'John Doe 3',
-        email: 'john3@gmail.com',
+        email: '787878@gmail.com',
         password_hash: await bcryptjs.hash('123456', 8),
         created_at: new Date(),
         updated_at: new Date(),
