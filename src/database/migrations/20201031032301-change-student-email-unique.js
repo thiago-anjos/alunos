@@ -1,6 +1,5 @@
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    queryInterface.changeColumn(
+  up: (queryInterface, Sequelize) => queryInterface.changeColumn(
       'students',
       'email',
       {
@@ -8,8 +7,6 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
-    );
   },
-
   down: async () => {},
 };
